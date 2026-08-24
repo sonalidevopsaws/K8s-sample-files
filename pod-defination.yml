@@ -8,7 +8,9 @@ metadata:
 spec:
   containers:
     - name: nginx-container
-      image: nginx  
+      image: nginx
+      ports:
+      - containerPort: 80
 
 
 # kubectl create -f pod-defination.yml
